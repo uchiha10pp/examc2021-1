@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="imagen/icon3.png">
+        <!--CDN CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+        crossorigin="anonymous" />
+        <!--CDN CSS-->
+        <link rel="preload" href="css/normalize.css" as="style">
+        <link rel="stylesheet" href="css/normalize.css">
+        <!--fonts letras-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+        <!--fonts letras-->
+        <link rel="preload" href="css/style.css" as="style">
+        <link rel="stylesheet" href="css/style.css">
+
+        
+        <title>Control</title>
+    </head>
+    <body>
+        <header>Login</header>
+        
+        <div class="formulario">
+            <form class="login" action="" method="POST" id="login" onsubmit="return validacion()">
+                <input class="icon_input" type="password"  id="passA" placeholder=" Contraseña Actual" required="">
+                <input class="icon_input" type="password" id="passN" placeholder=" Contraseña Nueva" required="">
+                <input class="icon_input" type="password" id="passCn" placeholder=" Confirmar Contraseña Nueva" required="">                
+            </form>
+
+            <div class="boton">
+                <input type="button" value="guardar" onclick="validacion()">
+                <input type="button" value="cancelar" onclick="limpiar()">  
+            </div>
+
+        </div>
+    </body>
+    <script type='text/javascript' src='javascript/javascript.js'>         
+        </script>
+</html>
