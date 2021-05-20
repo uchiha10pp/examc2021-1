@@ -29,14 +29,13 @@
             <form class="login" action="" method="POST" id="login" onsubmit="return validacion()">
                 <input class="icon_input" type="password"  id="passA" placeholder=" Contraseña Actual" required="">
                 <input class="icon_input" type="password" id="passN" placeholder=" Contraseña Nueva" required="">
-                <input class="icon_input" type="password" id="passCn" placeholder=" Confirmar Contraseña Nueva" required="">                
+                <input class="icon_input" type="password" id="passCn" placeholder=" Confirmar Contraseña Nueva" required="">   
+
+                <div class="boton">
+                    <input type="submit" value="guardar" onclick="validacion()">
+                    <input type="submit" value="cancelar" onclick="limpiar()">  
+                </div>             
             </form>
-
-            <div class="boton">
-                <input type="submit" value="guardar" onclick="validacion()">
-                <input type="submit" value="cancelar" onclick="limpiar()">  
-            </div>
-
         </div>
     </body>
     <script type='text/javascript' src='javascript/javascript.js'>         
