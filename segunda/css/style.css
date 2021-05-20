@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    font-size: 5rem;
+    font-size: 8rem;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -63,12 +63,15 @@ header {
 
 .boton {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;    
+    justify-content: center; 
+    font-size: 2rem; 
+    font-weight: bold;
 }
 
 .boton input[type = "submit"] {
-    width: 18rem;
+    width: 37rem;
     padding: 1.5rem;
     margin: 1rem;
     background-color: var(--principal);
@@ -83,3 +86,15 @@ header {
   }
 
 
+.extra {
+    font-size: 1.4rem;   
+    text-transform: capitalize;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.extra input[type = "checkbox"]:hover {
+    cursor: pointer;
+  }

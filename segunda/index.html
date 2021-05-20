@@ -9,13 +9,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
         crossorigin="anonymous" />
-        <!--CDN CSS-->
+        <!--NORMALIZE-->
         <link rel="preload" href="css/normalize.css" as="style">
         <link rel="stylesheet" href="css/normalize.css">
-        <!--fonts letras-->
+        <!--FONDO DE LETRAS-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
-        <!--fonts letras-->
+        <!--ESTILO-->
         <link rel="preload" href="css/style.css" as="style">
         <link rel="stylesheet" href="css/style.css">
 
@@ -26,19 +26,20 @@
         <header>Login</header>
         
         <div class="formulario">
-            <form class="login" action="" method="POST" id="login" onsubmit="return validacion()">
-                <input class="icon_input" type="password"  id="passA" placeholder=" Contraseña Actual" required="">
-                <input class="icon_input" type="password" id="passN" placeholder=" Contraseña Nueva" required="">
-                <input class="icon_input" type="password" id="passCn" placeholder=" Confirmar Contraseña Nueva" required="">                
+            <form class="login" action="Login.php" method="post">
+                <input class="icon_input" type="email" name="usu" placeholder=" Ingrese Usuario" required=""/>
+                <input class="icon_input" type="password" name="pass" placeholder=" Ingrese Contraseña" required=""/>
             </form>
 
             <div class="boton">
-                <input type="submit" value="guardar" onclick="validacion()">
-                <input type="submit" value="cancelar" onclick="limpiar()">  
+                <input type="submit" value="enviar">
+            </div>
+
+            <div class="extra">
+                <input type="checkbox">recuerdame                
+                <a href="index.html">¿has olvidado tu contraseña?</a> 
             </div>
 
         </div>
     </body>
-    <script type='text/javascript' src='javascript/javascript.js'>         
-        </script>
 </html>
